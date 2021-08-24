@@ -9,6 +9,9 @@ export class User extends Model<User> {
   lastName: string;
 
   @Column
+  signature: string;
+
+  @Column
   name: string;
 
   @Column

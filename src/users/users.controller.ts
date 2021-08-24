@@ -17,6 +17,12 @@ export class UsersController {
     return this.usersService.findAll();
   }
 
+  @Get('/my/:signature')
+  findMy(@Param('signature') signature: string): Promise<User[]> {
+    // console.log('======= signature:', signature);
+    return this.usersService.findMy(signature);
+  }
+
   @Get(':id')
   findOne(@Param('id') id: string): Promise<User> {
     return this.usersService.findOne(id);

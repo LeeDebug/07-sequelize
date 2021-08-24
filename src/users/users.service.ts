@@ -14,6 +14,7 @@ export class UsersService {
     const user = new User();
     user.firstName = createUserDto.firstName;
     user.lastName = createUserDto.lastName;
+    user.signature = createUserDto.signature;
     user.name = createUserDto.name;
     user.avatar = createUserDto.avatar;
     user.content = createUserDto.content;
@@ -23,6 +24,14 @@ export class UsersService {
 
   async findAll(): Promise<User[]> {
     return this.userModel.findAll();
+  }
+
+  async findMy(signature: string): Promise<User[]> {
+    return this.userModel.findAll({
+      where: {
+        signature,
+      },
+    });
   }
 
   findOne(id: string): Promise<User> {
