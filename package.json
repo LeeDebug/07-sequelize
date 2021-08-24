@@ -23,12 +23,14 @@
     "@nestjs/core": "8.0.6",
     "@nestjs/platform-express": "8.0.6",
     "@nestjs/sequelize": "8.0.0",
-    "mysql2": "2.3.0",
+    "@nestjs/typeorm": "^8.0.2",
+    "mysql2": "^2.3.0",
     "reflect-metadata": "0.1.13",
     "rimraf": "3.0.2",
     "rxjs": "7.3.0",
     "sequelize": "6.6.4",
     "sequelize-typescript": "2.1.0",
+    "typeorm": "^0.2.37",
     "typescript": "4.3.5"
   },
   "devDependencies": {
