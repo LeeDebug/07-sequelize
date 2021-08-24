@@ -11,6 +11,15 @@ export class User extends Model<User> {
   @Column
   signature: string;
 
+  @Column('long')
+  userProfile: string;
+
+  @Column('text')
+  accountInfo: string;
+
+  @Column('text')
+  systemInfo: string;
+
   @Column
   name: string;
 

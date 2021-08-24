@@ -15,6 +15,9 @@ export class UsersService {
     user.firstName = createUserDto.firstName;
     user.lastName = createUserDto.lastName;
     user.signature = createUserDto.signature;
+    user.userProfile = createUserDto.userProfile;
+    user.accountInfo = createUserDto.accountInfo;
+    user.systemInfo = createUserDto.systemInfo;
     user.name = createUserDto.name;
     user.avatar = createUserDto.avatar;
     user.content = createUserDto.content;
